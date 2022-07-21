@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFlow Übung lev3_1: JS-Einführung / forms-js_fonts-generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <form action="" onsubmit="return false">
+        <h3>Fonts Generator</h3>
+        <input type="range" name="size" id="size" onchange="changeFontsSize()">
+        <label for="range">Font size</label>
+        <select name="fonts" id="fonts" onchange="changeFontsSize()">
+            <option value="Bodoni Moda">'Bodoni Moda', serif</option>
+            <option value="Open Sans">'Open Sans', sans-serif</option>
+            <option value="Roboto">'Roboto', sans-serif</option>
+            <option value="Yusei Magic">'Yusei Magic', sans-serif</option>
+        </select>
+        <input type="text" name="fontTest" id="fontTest" placeholder="your text here" onchange="changeFontsSize()">
+        <h1 id="fontOutput"></h1>
+    </form>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
